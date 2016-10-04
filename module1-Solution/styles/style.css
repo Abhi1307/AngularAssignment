@@ -1,0 +1,8 @@
+#noDish {
+  color: red;
+  border: 1px solid red;
+}
+#dish{
+  color: green;
+  border: 1px solid green;
+}
