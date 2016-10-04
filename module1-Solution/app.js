@@ -9,9 +9,12 @@ MessageGenerator.$inject = ['$scope'];
 function MessageGenerator($scope){
 	$scope.dishes = "";
 	$scope.message = "";
+	$scope.color = "";
 	$scope.CheckDishes = function(){
 		var dishCount = DishCount($scope.dishes);
+		$scope.color = "green";
 		if(dishCount == 0){
+			$scope.color = "red";
 		 $scope.message = "Please enter data first";
 		}else if(dishCount <= 3){
 			$scope.message = "Enjoy!";
