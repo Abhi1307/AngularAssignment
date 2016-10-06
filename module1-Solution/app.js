@@ -22,7 +22,7 @@ function MessageGenerator($scope){
 			$scope.message = "Too much!";
 		}
 	};
-};
+}
 
 function DishCount(dishes){
 	if(dishes == ""){
@@ -37,6 +37,6 @@ function DishCount(dishes){
 		}
 		return numOfDishes;
 		}
-};
+}
 
 })();
