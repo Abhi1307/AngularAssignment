@@ -10,9 +10,12 @@ function MessageGenerator($scope){
 	$scope.dishes = "";
 	$scope.message = "";
 	$scope.idVal = "";
+	$scope.msg = false;
+
 	$scope.CheckDishes = function(){
 		var dishCount = DishCount($scope.dishes);
-		$scope.idVal = "dish"
+		$scope.msg = true;
+		$scope.idVal = "dish";
 		if(dishCount == 0){
 			$scope.idVal = "noDish";
 		 $scope.message = "Please enter data first";
